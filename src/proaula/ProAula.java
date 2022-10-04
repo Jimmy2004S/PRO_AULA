@@ -12,6 +12,8 @@ public class ProAula {
         MainGui v = new MainGui();
         v.setVisible(true);
         v.setLocationRelativeTo(v);
+        System.out.println("");
+        System.out.println("");
     }
     
 }
