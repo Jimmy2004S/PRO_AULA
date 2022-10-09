@@ -3,8 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/TextPrompt.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/Sala.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/ventanasGui/InterfazCine.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/ventanasGui/Registro.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/PelShingeki.jpg</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/cine-en-familia.jpg</file>
             <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/ProAula.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/Persona.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/Pelicula.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/ventanasGui/MainGui.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/Cliente.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/TextPrompt.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/Personaje.java</file>
+            <file>file:/D:/INGENIERIA%20DE%20SISTEMA/SEMESTRE%203/PROYECTO%20AULA/ProAula/src/proaula/clases/Usuario.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
- */
+
 package proaula.clases.ventanasGui;
 
 import java.awt.Color;
-import java.util.*;
-import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
 import proaula.TextPrompt;
 import proaula.clases.Cliente;
       
@@ -15,11 +11,11 @@ public class Registro extends javax.swing.JDialog {
     public Registro(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setLocationRelativeTo(null);
         TextPrompt txt = new TextPrompt("Nombre", txtNombre);
         TextPrompt txt2 = new TextPrompt("Apellido", txtApellido);
         TextPrompt txt3= new TextPrompt("Correo", txtCorreo);
         TextPrompt txt4 = new TextPrompt("Contraseña", txtContraseña);
-        setLocationRelativeTo(null);
         dia();
         año();
         error1.setVisible(false);
@@ -32,12 +28,12 @@ public class Registro extends javax.swing.JDialog {
         error8.setVisible(false);
     }
    
-    public void dia(){
+    public final void dia(){
            for(int i = 1 ; i<31 ; i++){
                dia.addItem(String.valueOf(i));
         }
     }
-    public void año(){
+    public final void año(){
         for (int i = 2022; i > 1900; i--) {
             año.addItem(String.valueOf(i));
         }
@@ -197,9 +193,14 @@ public class Registro extends javax.swing.JDialog {
         jPanel1.add(año, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 70, 30));
 
         mes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembte", " " }));
+        mes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mesActionPerformed(evt);
+            }
+        });
         jPanel1.add(mes, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 90, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 420, 520));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1000, 520));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -298,13 +299,17 @@ public class Registro extends javax.swing.JDialog {
         System.out.println(año.getSelectedItem());
         System.out.println(cliente1.toString());
         m.clientes.add(cliente1);
+            JOptionPane.showMessageDialog(null, "Usuario registrado");
         }
+        
+        m.setVisible(true);
+        
         
         
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
-        // TODO add your handling code here:
+   
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnCerrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCerrarMouseClicked
@@ -324,15 +329,12 @@ public class Registro extends javax.swing.JDialog {
     private void btnRegistrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarMouseClicked
         btnRegistrar.setFocusable(false);
     }//GEN-LAST:event_btnRegistrarMouseClicked
- public int cal(int edad){
-     int edadAc = 2022-edad;
-     return edadAc;
- }
 
- 
-    /**
-     * @param args the command line arguments
-     */
+    private void mesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mesActionPerformed
+       
+    }//GEN-LAST:event_mesActionPerformed
+
+
     public static void main(String args[]) {
         
         java.awt.EventQueue.invokeLater(new Runnable() {
