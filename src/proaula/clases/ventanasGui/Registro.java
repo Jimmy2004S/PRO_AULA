@@ -169,6 +169,7 @@ public class Registro extends javax.swing.JDialog {
         btnRegistrar.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistrar.setText("Registrarte");
+        btnRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnRegistrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnRegistrarMouseClicked(evt);
@@ -300,9 +301,10 @@ public class Registro extends javax.swing.JDialog {
         System.out.println(cliente1.toString());
         m.clientes.add(cliente1);
             JOptionPane.showMessageDialog(null, "Usuario registrado");
+            setVisible(false);
+        m.setVisible(true);
         }
         
-        m.setVisible(true);
         
         
         
@@ -328,6 +330,7 @@ public class Registro extends javax.swing.JDialog {
 
     private void btnRegistrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarMouseClicked
         btnRegistrar.setFocusable(false);
+       
     }//GEN-LAST:event_btnRegistrarMouseClicked
 
     private void mesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mesActionPerformed

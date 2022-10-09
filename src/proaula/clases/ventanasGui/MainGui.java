@@ -11,10 +11,10 @@ import proaula.clases.Cliente;
 public class MainGui extends javax.swing.JFrame {
 
     public static List<Cliente> clientes;
-    InterfazCine iCine = new InterfazCine();
+    InterfazCine iCine; 
     public MainGui() {
         initComponents();
-       
+        iCine = new InterfazCine();
         TextPrompt txt1 = new TextPrompt("Digite su correo...", txtMail);
         TextPrompt txt2 = new TextPrompt("Digite su Clave...", txtClave);
         clientes = new ArrayList<>();
@@ -159,24 +159,23 @@ public class MainGui extends javax.swing.JFrame {
         String correo = txtMail.getText();
         String contraseña = txtClave.getText();
         for (int i = 0; i < clientes.size(); i++) {
-            System.out.println(clientes.get(i));
             if (correo.equals(clientes.get(i).getCorreo()) && contraseña.equals(clientes.get(i).getContraseña())) {
                 JOptionPane.showMessageDialog(null, "Bienvenido");
                 band = true;
-                dispose();
-                break;
+                break;   
             }
         }
 
-        if (txtClave.getText().equals("") && txtMail.getText().equals("") ) {
+        if (txtClave.getText().equals("") && txtMail.getText().equals("")) {
             JlabdatosIncorrectos.setText("Campos vacios");
-        } else if (!txtClave.getText().equals("") && txtMail.getText().equals("") ) {
+        } else if (!txtClave.getText().equals("") && txtMail.getText().equals("")) {
             JlabdatosIncorrectos.setText("Digite el correo");
-        } else if (txtClave.getText().equals("") && !txtMail.getText().equals("") ) {
+        } else if (txtClave.getText().equals("") && !txtMail.getText().equals("")) {
             JlabdatosIncorrectos.setText("Digite la contraseña");
-        } else if (!txtClave.getText().equals("") && !txtMail.getText().equals("")&& band==false) {
+        } else if (!txtClave.getText().equals("") && !txtMail.getText().equals("") && band == false) {
             JlabdatosIncorrectos.setText("Usuario no encontrado");
         }
+        btnIniciar.setFocusable(false);
     }//GEN-LAST:event_btnIniciarActionPerformed
 
     private void btnCerrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCerrarMouseEntered
@@ -190,13 +189,11 @@ public class MainGui extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCerrarMouseExited
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
-
+        iCine.setOpacity(1.0f); 
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnCerrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCerrarMouseClicked
-
-//        iCine.setOpacity(0.1f); 
-        setVisible(false);
+         setVisible(false);
     }//GEN-LAST:event_btnCerrarMouseClicked
 
     private void btnIniciarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIniciarMouseEntered
@@ -207,7 +204,6 @@ public class MainGui extends javax.swing.JFrame {
     private void btnIniciarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIniciarMouseExited
         btnIniciar.setBackground(new java.awt.Color(20, 33, 60));
         btnIniciar.setFont(new java.awt.Font("Serif", 0, 14));
-
     }//GEN-LAST:event_btnIniciarMouseExited
 
     private void btnIniciarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIniciarMouseClicked
@@ -216,7 +212,7 @@ public class MainGui extends javax.swing.JFrame {
 
     private void registrarseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registrarseMouseClicked
         Registro r = new Registro(this, true);
-      
+        setVisible(false);
         r.setVisible(true);
     }//GEN-LAST:event_registrarseMouseClicked
 
