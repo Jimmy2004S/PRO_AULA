@@ -1,0 +1,15 @@
+DB_NAME=cine-gestion
+DB_USER=5tlnz3t07sjv7tzmot1r
+DB_PASSWORD=pscale_pw_UiUi75wodiNIfSrSqk5DQeFOMcPs5h6fi5qQIezD109
+DB_HOST=us-east.connect.psdb.cloud
+DB_PORT=3306
+MYSQL_ATTR_SSL_CA=/etc/ssl/certs/ca-certificates.crt
+
+
+CONECCION PARA JAVA
+
+Class.forName("com.mysql.cj.jdbc.Driver");
+Connection conn = DriverManager.getConnection(
+  "jdbc:mysql://us-east.connect.psdb.cloud/cine-gestion?sslMode=VERIFY_IDENTITY",
+  "5tlnz3t07sjv7tzmot1r",
+  "pscale_pw_UiUi75wodiNIfSrSqk5DQeFOMcPs5h6fi5qQIezD109");
