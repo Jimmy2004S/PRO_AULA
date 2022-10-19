@@ -301,7 +301,7 @@ public class Registro extends javax.swing.JDialog {
         System.out.println(cliente1.toString());
         m.clientes.add(cliente1);
             JOptionPane.showMessageDialog(null, "Usuario registrado");
-            setVisible(false);
+            this.setVisible(false);
         m.setVisible(true);
         }
         

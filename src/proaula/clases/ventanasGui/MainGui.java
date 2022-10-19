@@ -161,6 +161,7 @@ public class MainGui extends javax.swing.JFrame {
         for (int i = 0; i < clientes.size(); i++) {
             if (correo.equals(clientes.get(i).getCorreo()) && contraseña.equals(clientes.get(i).getContraseña())) {
                 JOptionPane.showMessageDialog(null, "Bienvenido");
+                this.setVisible(false);
                 band = true;
                 break;   
             }
@@ -212,7 +213,7 @@ public class MainGui extends javax.swing.JFrame {
 
     private void registrarseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registrarseMouseClicked
         Registro r = new Registro(this, true);
-        setVisible(false);
+        this.setVisible(false);
         r.setVisible(true);
     }//GEN-LAST:event_registrarseMouseClicked
 
