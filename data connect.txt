@@ -12,4 +12,4 @@ Class.forName("com.mysql.cj.jdbc.Driver");
 Connection conn = DriverManager.getConnection(
   "jdbc:mysql://us-east.connect.psdb.cloud/cine-gestion?sslMode=VERIFY_IDENTITY",
   "5tlnz3t07sjv7tzmot1r",
-  "pscale_pw_UiUi75wodiNIfSrSqk5DQeFOMcPs5h6fi5qQIezD109");
+  "pscale_pw_UiUi75wodiNIfSrSqk5DQeFOMcPs5h6fi5qQIezD109").
